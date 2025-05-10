@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Islami</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: #1e6f5c;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #289672;
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            background-image: url('/api/placeholder/1200/400');
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+        .hero h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.2em;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 40px 0;
+        }
+        .feature {
+            flex-basis: calc(33% - 20px);
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .feature h3 {
+            color: #1e6f5c;
+        }
+        .quran-section {
+            background-color: #f9f9f9;
+            padding: 40px 0;
+            text-align: center;
+        }
+        .quran-verse {
+            max-width: 800px;
+            margin: 0 auto;
+            font-style: italic;
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        .prayer-times {
+            background-color: #1e6f5c;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+        .prayer-times-container {
+            display: flex;
+            justify-content: space-around;
+            max-width: 800px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+        }
+        .prayer {
+            margin: 10px;
+            padding: 15px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 5px;
+            min-width: 120px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+        .social-icons {
+            margin: 15px 0;
+        }
+        .social-icons a {
+            color: white;
+            margin: 0 10px;
+            font-size: 1.2em;
+            text-decoration: none;
+        }
+        @media (max-width: 768px) {
+            .feature {
+                flex-basis: 100%;
+            }
+            .prayer-times-container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Miftahul Ulum</h1>
+            <p>Menyebarkan Cahaya Islam untuk Semua</p>
+        </div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#beranda">Beranda</a></li>
+            <li><a href="#artikel">Artikel</a></li>
+            <li><a href="#quran">Al-Qur'an</a></li>
+            <li><a href="#jadwal">Jadwal Sholat</a></li>
+            <li><a href="#tentang">Tentang Kami</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+        </ul>
+    </nav>
+    
+    <section class="hero" id="beranda">
+        <div class="hero-content">
+            <h1>Selamat Datang di Website Islami</h1>
+            <p>Tempat untuk menambah wawasan dan memperdalam ilmu agama Islam</p>
+        </div>
+    </section>
+    
+    <div class="container">
+        <section class="features">
+            <div class="feature">
+                <h3>Artikel Islami</h3>
+                <p>Berbagai artikel islami yang informatif dan menginspirasi untuk kehidupan sehari-hari.</p>
+            </div>
+            <div class="feature">
+                <h3>Al-Qur'an Digital</h3>
+                <p>Baca Al-Qur'an digital dengan terjemahan dan tafsir yang lengkap.</p>
+            </div>
+            <div class="feature">
+                <h3>Jadwal Sholat</h3>
+                <p>Jadwal sholat akurat untuk kota Anda, dilengkapi dengan pengingat adzan.</p>
+            </div>
+        </section>
+        
+        <section class="quran-section" id="quran">
+            <h2>Ayat Al-Qur'an Pilihan</h2>
+            <div class="quran-verse">
+                <p>"Dan sesungguhnya telah Kami mudahkan Al-Qur'an untuk pelajaran, maka adakah orang yang mengambil pelajaran?"</p>
+                <p>- Al-Qamar: 17</p>
+            </div>
+        </section>
+    </div>
+    
+    <section class="prayer-times" id="jadwal">
+        <h2>Jadwal Sholat Hari Ini</h2>
+        <div class="prayer-times-container">
+            <div class="prayer">
+                <h3>Subuh</h3>
+                <p>04:30</p>
+            </div>
+            <div class="prayer">
+                <h3>Dzuhur</h3>
+                <p>12:00</p>
+            </div>
+            <div class="prayer">
+                <h3>Ashar</h3>
+                <p>15:15</p>
+            </div>
+            <div class="prayer">
+                <h3>Maghrib</h3>
+                <p>18:00</p>
+            </div>
+            <div class="prayer">
+                <h3>Isya</h3>
+                <p>19:15</p>
+            </div>
+        </div>
+    </section>
+    
+    <div class="container" id="artikel">
+        <h2>Artikel Terbaru</h2>
+        <div class="features">
+            <div class="feature">
+                <h3>Keutamaan Bulan Ramadhan</h3>
+                <p>Mengenal lebih dalam tentang keutamaan dan keberkahan bulan suci Ramadhan.</p>
+            </div>
+            <div class="feature">
+                <h3>Adab dalam Islam</h3>
+                <p>Pentingnya adab dan akhlak dalam kehidupan seorang muslim.</p>
+            </div>
+            <div class="feature">
+                <h3>Kisah Teladan Para Nabi</h3>
+                <p>Pelajaran dan hikmah dari kisah-kisah para nabi dan rasul.</p>
+            </div>
+        </div>
+    </div>
+    
+    <footer id="kontak">
+        <div class="container">
+            <h3>Miftahul Ulum</h3>
+            <p>Jl. Sidonipah VII/1-C, Kel. Simolawang, Kec. Simokerto, Surabaya Utara</p>
+            <p>Email: info@nurulislam.id | Telepon: <a href="tel:085608935351" style="color: white; text-decoration: underline;">085608935351</a> | WhatsApp: <a href="https://wa.me/6285608935351" style="color: white; text-decoration: underline;">085608935351</a></p>
+            <div class="social-icons">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="https://www.youtube.com/@YASMU-TV" target="_blank">YASMU-TV</a>
+                <a href="#">Twitter</a>
+            </div>
+            <p>&copy; 2025 Website Islami. Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+</body>
+</html>
